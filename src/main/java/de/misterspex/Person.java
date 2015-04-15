@@ -2,6 +2,7 @@ package de.misterspex;
 
 public class Person {
     private final String name;
+    private Car car;
 
     public Person(String name) {
         this.name = name;
@@ -11,6 +12,11 @@ public class Person {
         return name;
     }
 
-    public static void main(String[] args){
+    public void setCar(Car car){
+	this.car = car;
+    }
+
+    public Car getCar(){
+	return car;
     }
 }
